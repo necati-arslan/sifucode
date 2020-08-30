@@ -1,0 +1,23 @@
+.headerSection>h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.headerSection>h2::after{ 
+    content:'';
+    display:block;
+    width:70px;
+    height:1px;
+    background:#49a010;
+    margin-top: 10px;
+    
+}
+@media screen and (max-width:615px){
+
+    .headerSection>h2{  
+        font-size: 1.5rem!important;
+    }
+    
+
+}

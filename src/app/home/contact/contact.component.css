@@ -1,0 +1,74 @@
+.contactSection{
+    background-image: url(/assets/contact.jpg); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.contactSection > .inner{
+    width: 1000px;
+    text-align: center;
+}
+
+.contactInfo{
+display: flex;
+justify-content: space-around;
+margin: 20px;
+}
+
+.contactInfo i{
+    color:#dd4b4e;
+}
+.socialMedia{
+display: flex ;
+justify-content: center;
+margin: 20px;
+}
+.socialMedia > .icon{
+    margin: 10px 20px;
+}
+.socialMedia > .icon:hover i{
+    color: black;
+    cursor: pointer;
+}
+.socialMedia i{
+    color:#dd4b4e;
+}
+
+.formInput{
+    width: 100%;
+    padding: 10px 30px;
+    
+}
+
+.contactForm{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+  
+}
+
+.contactForm .nameAndEmail{
+    display: flex;
+}
+.contactSection .text{
+    padding: 20px;
+    line-height: 1.6;
+}
+
+@media (max-width:615px){
+    .contactForm .nameAndEmail{
+        flex-direction: column;
+    }
+
+    
+
+    
+}

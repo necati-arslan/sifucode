@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "freelancer-aaa07": {
+      "hosting": {
+        "freelancer": [
+          "freelancer-aaa07"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+ /*fature css*/
+
+.featuresSection {
+    min-height: 400px;
+    color: #11122b;
+    font-family: "Ubuntu Condensed", sans-serif;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    /* box-shadow: inset 0px -6px 79px -8px rgba(0, 0, 0, 0.58); */
+}
+
+
+
+ .featuresSection > .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featuresSection > .content > .columns-wrapper {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.featuresSection > .content > .columns-wrapper > .column {
+    padding: 20px;
+    margin: 42px;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+    
+/* .featuresSection > .content > .columns-wrapper > .column:hover {
+    border-bottom: 5px solid #11122b;
+} */
+
+.featuresSection > .content > .columns-wrapper > .column :nth-child(1) {
+    height: 90px;
+    width: auto;
+
+  
+}
+
+.featuresSection > .content > .columns-wrapper > .column :nth-child(2) {
+    font-size: 1.4rem;
+    font-weight: 900;
+    height: 30px;
+    transition: 1s;
+    color: #dd4b4e;
+    padding-left: 10px;
+
+}
+
+.featuresSection > .content > .columns-wrapper > .column :nth-child(2):hover {
+    letter-spacing: 2px;
+}
+
+.featuresSection > .content > .columns-wrapper > .column :nth-child(3) {
+    line-height: 1.6;
+      
+}
+
+@media (max-width:615px){
+    .featuresSection{
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .featuresSection > .content > .columns-wrapper {
+        flex-direction: column;
+    }
+    .featuresSection > .content > .columns-wrapper .column {
+        margin: 0px;
+    }
+
+}
+
+

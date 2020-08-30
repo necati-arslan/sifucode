@@ -1,0 +1,126 @@
+ /*navigation css*/
+
+.navigation-wrapper {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    color: #cbcbcb;
+    top: 0px;
+    left: 0px; 
+    position: fixed;
+    transition: 0.6s;
+    z-index: 2;
+    box-sizing: border-box; 
+    background-color: black;
+  
+    /* Flexbox container */  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sticky{
+    background-color: #fff;
+}
+.sticky .links-wrapper > .nav-link a{
+    color: rgb(116, 112, 112);
+}
+
+.sticky .links-wrapper > .nav-link a:hover{
+    color: #dd4b4e;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+}
+
+
+.sticky .hamburg i{
+    color: rgb(116, 112, 112);
+}
+
+
+
+.navigation-wrapper > .center-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0px 20px 0px 20px;
+   }
+
+.center-column .hamburg{
+    display: none;
+    
+}
+.center-column .hamburg:hover{
+    color: #dd4b4e;
+    cursor: pointer;
+}
+
+.links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+ 
+.links-wrapper > .nav-link {
+    width: 70px; 
+    text-align: center;
+}
+
+.links-wrapper > .nav-link a {
+    font-size: 1.2rem;
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: #fafafa;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.links-wrapper > .nav-link a:hover {
+    color: #dd4b4e;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.navigation-wrapper > .center-column > .banner-image img {
+    width: 150px;
+    height: auto;
+    vertical-align: sub;
+}
+
+.navigation-wrapper > .center-column > .banner-image .logoText{
+
+display: inline;
+padding: 0px!important;
+margin: 0px;
+vertical-align: super;
+color: #fafafa;
+}
+.sticky .banner-image .logoText{
+    color: rgb(116, 112, 112)!important;
+}
+
+
+@media screen and (max-width:768px){
+
+    .navigation-wrapper{
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .center-column .hamburg{
+        display: inherit;
+        font-size: 1.7rem;
+    }
+    .center-column .links-wrapper{
+        display: none;
+    }
+
+
+}
+
+/*navigation css*/

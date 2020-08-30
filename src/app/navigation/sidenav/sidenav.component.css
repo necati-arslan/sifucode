@@ -1,0 +1,44 @@
+/*sideMenu css*/
+.sideMenu{
+    width: 0px;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0px;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.794);
+    transition: all 0.5s ease 0s;
+    box-sizing: border-box;
+}
+
+
+.sideMenu a{
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.sideMenu a:hover{
+    color: #dd4b4e;
+}
+.sideMenu_content{
+    padding-top: 60px;
+}
+
+.sideMenu_content a:hover, .sideMenu_content a:focus{
+    color: #dd4b4e;
+    background-color: #fff;
+}
+
+.sideMenu .close{
+    position: absolute;
+    font-size: 40px;
+    padding: 15px;
+    right: 5px;
+
+}
+
+/*sideMenu css*/

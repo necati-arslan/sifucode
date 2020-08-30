@@ -1,0 +1,80 @@
+ .myProjectSection{
+     width: 100%;
+     height: auto;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-top: 30px;
+ 
+     
+ }
+
+ .myProjectSection > .inner{
+     width: 1200px;
+     
+    
+}
+
+.myProjectSection > .inner > .content{
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+ 
+
+ .myProjectSection  .content > .image{
+   flex-basis: 50%;
+   padding:0px 10px;
+   
+}
+
+.myProjectSection  .content > .image img{
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+
+ .myProjectSection  .content > .text{
+    flex-basis: 50%;
+    text-align: left;
+    padding: 0px 10px;
+ }
+
+ .myProjectSection  .content > .text p{
+    line-height: 2;
+    padding: 20px 0px;
+    
+ }
+
+ .myProjectSection  .content > .text ul{
+    list-style: none;
+    line-height: 1.7;
+ }
+
+
+ @media screen and (max-width:615px){
+
+    .myProjectSection{
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+    }
+  
+    .myProjectSection  .content {
+       flex-direction: column;
+       margin-bottom: 20px;    
+    }
+    
+    .myProjectSection  .content > .image{
+ 
+       width: 100%;
+       order:1
+    }
+    .myProjectSection  .content > .text{
+    
+        
+        order:2
+     }
+
+} 

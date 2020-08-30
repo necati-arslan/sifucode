@@ -1,0 +1,74 @@
+<div class="contactSection">
+    <div class="inner">
+        <div class="headerSection">
+            <h2>Contact Info</h2>
+        </div>
+        <div class="text">
+            <p>Have a question or want to work together?</p>
+        </div>
+        <div class="myContactInfo">
+            <div class="contactInfo">
+                <div>
+                    <div><i class="far fa-envelope fa-2x"></i><span
+                            style="vertical-align: super; padding: 10px;">Mail</span></div>
+                    <div>necati.arslan2018@gmail.com</div>
+                </div>
+                <div>
+                    <div><i class="fab fa-whatsapp fa-2x"></i><span
+                            style="vertical-align: super; padding: 10px;">Whatsapp</span></div>
+                    <div>5556545645</div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="contactForm">
+            <form [formGroup]="contactForm" (ngSubmit)="sendMessage(ngcontactForm)" #ngcontactForm="ngForm">
+                <div class="nameAndEmail">
+                    <mat-form-field class="formInput" appearance="outline">
+                        <mat-label>Name</mat-label>
+                        <input matInput formControlName="name">
+                    </mat-form-field>
+                    <mat-form-field class="formInput" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput formControlName="email">
+                        <mat-error *ngIf="contactForm.get('email').hasError('email')">Mail is not correct
+                            </mat-error>
+                        <mat-error *ngIf="contactForm.get('email').hasError('required')">Please fill email
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="formInput" appearance="outline">
+                        <mat-label>Subject</mat-label>
+                        <input matInput formControlName="konu">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="formInput " appearance="outline">
+                        <mat-label>Message</mat-label>
+                        <textarea style="min-height: 150px;" matInput formControlName="mesaj"></textarea>
+
+                        <mat-error *ngIf="contactForm.get('mesaj').hasError('required')">Please fill message!
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div style="text-align: right;padding: 10px 40px;">
+                    <button type="submit" style="width: 100px;" mat-raised-button>Send</button>
+                </div>
+
+
+
+
+
+            </form>
+
+
+        </div>
+        <div class="socialMedia">
+            <div class="icon"><a href="https://github.com/necatia?tab=repositories" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/n-design-design-8035ba1b5/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></div>
+        </div>
+    </div>
+</div>
